@@ -1,6 +1,6 @@
 # pypintor
 
-A collection of deligthful Python classes for different image processing tasks.
+A collection of Python classes for different image processing tasks.
 
 ## Why call it pypintor?
 
