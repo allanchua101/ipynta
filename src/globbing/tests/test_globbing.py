@@ -1,6 +1,6 @@
-from ..globbing import ImageGlobber
+from pyntor.globbing import ImageGlobber
 
-SAMPLES_DIR = "./images"
+SAMPLES_DIR = "./imgs"
 
 def test_initializer():
     globber = ImageGlobber(SAMPLES_DIR)

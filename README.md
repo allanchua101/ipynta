@@ -1,4 +1,4 @@
-# pypintor
+# pyntor
 
 A collection of Python classes for different image processing tasks.
 
