@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd ../..
-
 # Step 1: Setup virtual environment
 if [ -d "./venv" ]; then
   echo "Virtual environment already configured..."
@@ -21,5 +19,3 @@ pip3 install --upgrade pip
 # Step 4: Install package dependencies
 echo "Installing package dependencies..."
 python3 -m pip install -r requirements.txt
-
-cd ./src
