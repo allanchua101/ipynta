@@ -2,7 +2,7 @@
 
 `ImageGlobber` class is used to represent image globbing operation(s).
 
-### List path of images from a directory
+## get_img_paths()
 
 You can use the `ImageGlobber` class to list down the path of images from a specific directory.
 
