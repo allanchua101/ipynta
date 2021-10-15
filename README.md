@@ -1,7 +1,7 @@
-# pyntor
+# ipynta
 
 A collection of Python classes for different image processing tasks.
 
-## Why call it pypintor?
+## Why call it ipynta?
 
-Pintor means *Painter* in tagalog! This library is proudly developed by a Singapore-based Filipino lad with nothing better to do during evenings :smile:
+`I-pinta` means _"to paint"_ in tagalog! This library is proudly developed by a Singapore-based Filipino lad with nothing better to do during evenings :smile:.

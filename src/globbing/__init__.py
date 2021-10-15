@@ -1,1 +1,0 @@
-from .ImageGlobber import ImageGlobber
