@@ -1,3 +1,5 @@
+# Author: Allan Chua allanchua.officefiles@gmail.com
+
 import glob 
 
 class ImageGlobber:
