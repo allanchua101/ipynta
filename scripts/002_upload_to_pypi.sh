@@ -1,9 +1,14 @@
 #!/bin/bash
+set -e
 
-cd ./src
+DIST_DIR="./dist"
+
+cd ../src
+
+# Step 1: Remove old distribution directory
+rm -rf $DIST_DIR
 
 # Step 1: Create distribution directory
-DIR="./dist"
 
 python setup.py sdist
 

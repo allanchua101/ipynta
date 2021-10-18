@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ..
+
 # Step 1: Setup virtual environment
 if [ -d "./venv" ]; then
   echo "Virtual environment already configured..."
