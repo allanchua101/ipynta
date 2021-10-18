@@ -24,5 +24,6 @@ class BasePredicate:
     if isinstance(images[0], str):
       tmp = [Image.open(img_path) for img_path in images]
       self.images = tmp
+      return
 
     self.images = images
