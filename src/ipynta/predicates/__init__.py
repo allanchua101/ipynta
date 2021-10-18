@@ -1,1 +1,1 @@
-from .image_globber import ImageGlobber
+from .base_predicate import BasePredicate
