@@ -11,8 +11,8 @@ class ImageGlobber:
         Source path of images to be globbed.
     """
     def __init__(self, src_path):
-        """
-        Constructs all the necessary attributes for an image globber object.
+        """Constructs all the necessary attributes for an image globber object.
+        
         Args:
             src_path (str): Source path of images to be globbed.
         """

@@ -15,7 +15,10 @@ setup(name='ipynta',
       description="A Python library for different image processing tasks.",
       packages=find_packages(),
       author="Allan Chua",
-      install_requires=["pathlib"],
+      install_requires=[
+            "pathlib",
+            "pillow"
+      ],
       author_email="allanchua.officefiles@gmail.com",
       keywords=["python", "images", "image utilities"],
       classifiers=[
