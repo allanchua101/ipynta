@@ -1,17 +1,21 @@
 from setuptools import setup, find_packages
 from pathlib import Path
 
-this_directory = Path(__file__).parent
-long_description = (this_directory / "PyPi Readme.md").read_text()
+doc_path = Path("./README.md")
+
+if (doc_path.exists()):
+      long_description = doc_path.read_text()
+else:
+      long_description = "We're fixing our docs!"
 
 setup(name='ipynta',
-      version='0.0.6',
+      version='0.0.8',
       long_description=long_description,
       long_description_content_type='text/markdown',
       description="A Python library for different image processing tasks.",
       packages=find_packages(),
       author="Allan Chua",
-      install_requires=[],
+      install_requires=["pathlib"],
       author_email="allanchua.officefiles@gmail.com",
       keywords=["python", "images", "image utilities"],
       classifiers=[
