@@ -1,6 +1,6 @@
 # DimensionPred
 
-`DimensionPred` class used for writing dimension-based predicates.
+`DimensionPred` class is used for writing dimension-based predicates.
 
 ## Filtering by minimum width
 
