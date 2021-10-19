@@ -4,7 +4,15 @@
 
 ## Globbing
 
-- [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/001_ImageGlobber.md)
+Globbing classes are used for sourcing objects from different sources (local drive, zip files, etc.):
+
+- [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/ImageGlobber.md)
+
+## Predicates
+
+Predicate classes are used for slicing / filtering your image datasets.
+
+- [DimensionPredicate](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/DimensionPred.md)
 
 ### Why was it named ipynta?
 

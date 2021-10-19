@@ -7,7 +7,7 @@ def test_get_img_paths():
     globber = ImageGlobber(SAMPLES_DIR)
     img_paths = globber.get_img_paths()
     actual = len(img_paths)
-    expected = 2
+    expected = 4
 
     assert(actual == expected)
 

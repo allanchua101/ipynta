@@ -17,7 +17,7 @@ class DimensionPred(BasePred):
     """
     BasePred.__init__(self, images)
 
-  def filter(self, min_height=0, min_width=0, max_height=0, max_width=0):
+  def filter(self, min_height=-1, min_width=-1, max_height=-1, max_width=-1):
     """Filters the images based on their dimensions.
 
     Args:
@@ -30,5 +30,22 @@ class DimensionPred(BasePred):
       list[PIL.Image]: List of pillow images
     """
     filtered_images = []
+
+    for image in self.images:
+      width, height = image.size
+
+      if min_height > -1 and height >= min_height:
+        continue
+
+      if min_width > -1 and width >= min_width:
+        continue
+
+      if max_height > -1 and height >= max_height:
+        continue
+
+      if max_width > -1 and width >= max_width:
+        continue
+
+      filtered_images.append(image)
 
     return filtered_images
