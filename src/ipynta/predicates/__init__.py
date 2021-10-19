@@ -1,1 +1,2 @@
-from .base_predicate import BasePredicate
+from .base import BasePred
+from .dimension import DimensionPred
