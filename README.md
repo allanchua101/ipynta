@@ -2,7 +2,7 @@
 
 **ipynta** is a Python library for rapid development of image pre-processing pipelines.
 
-## High level overview of ipynta components
+## High level overview of ipynta pieces
 
 TODO: SHOW Diagram here
 
