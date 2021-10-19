@@ -6,13 +6,13 @@
 
 TODO: SHOW Diagram here
 
-### Sourcing Classes
+## Sourcing Classes
 
 Sourcing classes are used for retrieving image datasets from different sources (local drive, zip files, etc.):
 
 - [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/ImageGlobber.md)
 
-### Predicate Classes
+## Predicate Classes
 
 Predicate classes are used for slicing / filtering your image datasets.
 
