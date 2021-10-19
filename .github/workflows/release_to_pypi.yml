@@ -23,6 +23,7 @@ jobs:
       - name: Run unit tests
         run: |
           cd ./src
+          pip install . --upgrade
           pytest
       - name: Build and publish
         env:
