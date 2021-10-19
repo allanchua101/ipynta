@@ -1,5 +1,5 @@
 <p align="center" width="300px">
-    <img width="33%" src="https://github.com/allanchua101/ipynta/blob/main/docs/images/logo.jpg"> 
+    <img width="33%" src="https://i.imgur.com/SN7p6bG.jpeg"> 
 </p>
 
 <p align="center">
