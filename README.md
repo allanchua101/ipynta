@@ -1,8 +1,12 @@
-# ipynta
+<p align="center" width="300px">
+    <img width="33%" src="https://github.com/allanchua101/ipynta/blob/main/docs/images/logo.jpg"> 
+</p>
 
-**ipynta** is a Python library for rapid development of image pre-processing pipelines.
+<p align="center">
+  <strong>ipynta</strong> is a Python library for rapid development of image pre-processing pipelines.
+</p>
 
-## High level overview of ipynta pieces
+## High level overview
 
 TODO: SHOW Diagram here
 
