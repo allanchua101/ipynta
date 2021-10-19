@@ -34,16 +34,16 @@ class DimensionPred(BasePred):
     for image in self.images:
       width, height = image.size
 
-      if min_height > -1 and height >= min_height:
+      if min_height > -1 and height < min_height:
         continue
 
-      if min_width > -1 and width >= min_width:
+      if min_width > -1 and width < min_width:
         continue
 
-      if max_height > -1 and height >= max_height:
+      if max_height > -1 and height > max_height:
         continue
 
-      if max_width > -1 and width >= max_width:
+      if max_width > -1 and width > max_width:
         continue
 
       filtered_images.append(image)
