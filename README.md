@@ -12,7 +12,7 @@ Globbing classes are used for sourcing objects from different sources (local dri
 
 Predicate classes are used for slicing / filtering your image datasets.
 
-- [DimensionPredicate](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/DimensionPred.md)
+- [DimensionPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/DimensionPred.md)
 
 ### Why was it named ipynta?
 
