@@ -18,7 +18,7 @@ Sourcing classes are used for retrieving image datasets from different sources (
 
 ## Predicate Classes
 
-Predicate classes are used for slicing / filtering your image datasets.
+Predicate classes are used for filtering unwanted data from image datasets.
 
 - [DimensionPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/DimensionPred.md)
 
