@@ -3,6 +3,11 @@ import os
 
 README_PATH = "./README.md"
 
+PROJECT_URLS = {
+      "Source Code": "https://github.com/allanchua101/ipynta",
+}
+
+
 if (os.path.isfile(README_PATH)):
       with open(README_PATH) as f:
             long_description = "".join(f.readlines())
@@ -10,7 +15,7 @@ else:
       long_description = "We're fixing our docs!"
 
 setup(name='ipynta',
-      version='0.0.18',
+      version='0.0.19',
       long_description=long_description,
       long_description_content_type='text/markdown',
       description="A Python library for different image processing tasks.",
@@ -27,4 +32,5 @@ setup(name='ipynta',
             "Operating System :: MacOS :: MacOS X",
             "Operating System :: Microsoft :: Windows",
       ],
+      project_urls=PROJECT_URLS,
       zip_safe=False)
