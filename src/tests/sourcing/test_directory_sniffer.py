@@ -7,7 +7,7 @@ def test_get_img_paths():
     globber = DirectorySniffer()
     img_paths = globber.get_img_paths(SAMPLES_DIR)
     actual = len(img_paths)
-    expected = 4
+    expected = 6
 
     assert(actual == expected)
 
