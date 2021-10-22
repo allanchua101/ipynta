@@ -1,10 +1,11 @@
 from setuptools import setup, find_packages
-from pathlib import Path
+import os
 
-doc_path = Path("./README.md")
+README_PATH = "./README.md"
 
-if (doc_path.exists()):
-      long_description = doc_path.read_text()
+if (os.path.isfile(README_PATH)):
+      with open(README_PATH) as f:
+            long_description = f.readlines()
 else:
       long_description = "We're fixing our docs!"
 
@@ -15,10 +16,7 @@ setup(name='ipynta',
       description="A Python library for different image processing tasks.",
       packages=find_packages(),
       author="Allan Chua",
-      install_requires=[
-            "pathlib",
-            "pillow"
-      ],
+      install_requires=["pillow"],
       author_email="allanchua.officefiles@gmail.com",
       keywords=["python", "images", "image utilities"],
       classifiers=[

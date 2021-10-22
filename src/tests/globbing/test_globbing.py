@@ -1,7 +1,7 @@
 from ipynta.globbers import ImageGlobber
-from pathlib import Path
+from os import path
 
-SAMPLES_DIR = (Path(__file__).parent.parent / "./imgs")
+SAMPLES_DIR = path.dirname(path.dirname(path.abspath(__file__))) + "/imgs"
 
 def test_get_img_paths():
     globber = ImageGlobber(SAMPLES_DIR)

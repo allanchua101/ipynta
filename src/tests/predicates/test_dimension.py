@@ -1,10 +1,10 @@
 from ipynta.predicates import DimensionPred
-from pathlib import Path
-import PIL
+from os import path
 from PIL import Image
+import PIL
 import pytest
 
-SAMPLES_DIR = (Path(__file__).parent.parent / "./imgs")
+SAMPLES_DIR = path.dirname(path.dirname(path.abspath(__file__))) + "/imgs"
 
 def test_dimpred_empty_init():
   """Test function for empty filter construction"""

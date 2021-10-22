@@ -1,9 +1,9 @@
 from ipynta.predicates import BasePred
-from pathlib import Path
+from os import path
 from PIL import Image
 import PIL
 
-SAMPLES_DIR = (Path(__file__).parent.parent / "./imgs")
+SAMPLES_DIR = path.dirname(path.dirname(path.abspath(__file__))) + "/imgs"
 
 def test_base_pred_empty_init():
   pred = BasePred([])
