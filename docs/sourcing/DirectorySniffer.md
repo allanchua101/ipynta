@@ -1,6 +1,6 @@
 # DirectorySniffer
 
-`DirectorySniffer` class is used to load images from a local directory.
+`DirectorySniffer` class is used to load image metadata from a local directory.
 
 ## Sourcing image paths from a local directory
 
