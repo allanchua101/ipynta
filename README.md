@@ -6,7 +6,7 @@
   <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
 
-## High level overview
+### High level overview
 
 <p align="center">
   <img src="https://i.imgur.com/tCDKqJD.png" />
@@ -16,13 +16,13 @@
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline..
 </p>
 
-## Sourcing Classes
+### Sourcing Classes
 
 Sourcing classes are used for retrieving image datasets from different sources (local drive, zip files, etc.):
 
 - [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/ImageGlobber.md)
 
-## Predicate Classes
+### Predicate Classes
 
 Predicate classes are used for filtering unwanted data from image datasets.
 
