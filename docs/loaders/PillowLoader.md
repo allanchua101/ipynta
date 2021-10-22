@@ -4,15 +4,15 @@
 
 ## How to load images from local drive
 
-You can use the `ImageGlobber` class to list down the path of images from a specific directory and pass its output to `PillowLoader` to load images from your local drive.
+You can use the `DirectorySniffer` class to list down the path of images from a specific directory and pass its output to `PillowLoader` to load images from your local drive.
 
 ```py
-from ipynta.globbers import ImageGlobber
+from ipynta.sourcing import DirectorySniffer
 from ipynta.loaders import PillowLoader
 
-# Use ImageGlobber to load images from your local drive.
-globber = ImageGlobber("./test/images")
-path_list = globber.get_img_paths()
+# Use DirectorySniffer to load images from your local drive.
+sniffer = DirectorySniffer()
+path_list = sniffer.get_img_paths("./test/images")
 
 # Pass the list of image paths to the PillowLoader.load
 # method to get your list of Pillow images

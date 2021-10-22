@@ -1,5 +1,5 @@
 from ipynta.loaders import PillowLoader
-from ipynta.globbers import ImageGlobber
+from ipynta.sourcing import DirectorySniffer
 from os import path
 from PIL import Image
 
@@ -22,9 +22,10 @@ def test_load_single_image():
 
 def test_load_multiple():
   """Test function for single image loading of pillow images"""
-  globber = ImageGlobber(SAMPLES_DIR)
+  sniffer = DirectorySniffer()
+  path_list = sniffer.get_img_paths(SAMPLES_DIR)
+
   loader = PillowLoader()
-  path_list = globber.get_img_paths()
   img_list = loader.load(path_list)
   actual = len(img_list)
   expected = len(img_list)

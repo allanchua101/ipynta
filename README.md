@@ -20,7 +20,7 @@
 
 Sourcing classes are used for retrieving image dataset metadata from different sources (local drive, zip files, etc.):
 
-- [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/ImageGlobber.md)
+- [DirectorySniffer](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/DirectorySniffer.md)
 
 ### Loader Classes
 

@@ -1,5 +1,5 @@
 from ipynta.loaders import OpenCVLoader
-from ipynta.globbers import ImageGlobber
+from ipynta.sourcing import DirectorySniffer
 from os import path
 import numpy as np
 
@@ -24,8 +24,8 @@ def test_load_multiple():
   """Test function for single image loading of OpenCV images"""
   loader = OpenCVLoader()
 
-  globber = ImageGlobber(SAMPLES_DIR)
-  path_list = globber.get_img_paths()
+  sniffer = DirectorySniffer()
+  path_list = sniffer.get_img_paths(SAMPLES_DIR)
 
   img_list = loader.load(path_list)
   actual = len(img_list)
