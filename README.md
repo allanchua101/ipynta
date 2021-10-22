@@ -18,9 +18,16 @@
 
 ### Sourcing Classes
 
-Sourcing classes are used for retrieving image datasets from different sources (local drive, zip files, etc.):
+Sourcing classes are used for retrieving image dataset metadata from different sources (local drive, zip files, etc.):
 
 - [ImageGlobber](https://github.com/allanchua101/ipynta/blob/main/docs/globbing/ImageGlobber.md)
+
+### Loader Classes
+
+Loader classes are used for instantiating / constructing / loading images from different sources.
+
+- [OpenCVLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/OpenCVLoader.md)
+- [PillowLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/PillowLoader.md)
 
 ### Predicate Classes
 
