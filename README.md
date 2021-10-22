@@ -1,9 +1,9 @@
-<p align="center" width="300px">
-    <img width="33%" src="https://i.imgur.com/SN7p6bG.jpeg"> 
+<p align="center">
+    <img  src="https://i.imgur.com/mKCFKIf.jpeg"> 
 </p>
 
 <p align="center">
-  <strong>ipynta</strong> is a Python library for rapid development of image pre-processing pipelines.
+  <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
 
 ## High level overview
