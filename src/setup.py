@@ -5,12 +5,12 @@ README_PATH = "./README.md"
 
 if (os.path.isfile(README_PATH)):
       with open(README_PATH) as f:
-            long_description = f.readlines()
+            long_description = "".join(f.readlines())
 else:
       long_description = "We're fixing our docs!"
 
 setup(name='ipynta',
-      version='0.0.17',
+      version='0.0.18',
       long_description=long_description,
       long_description_content_type='text/markdown',
       description="A Python library for different image processing tasks.",
