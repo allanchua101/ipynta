@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline..
+  The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
 
 ### Sourcing Classes
