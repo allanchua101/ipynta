@@ -16,7 +16,7 @@ sniffer = DirectorySniffer()
 path_list = sniffer.get_img_paths("./test/images")
 
 # Pass the list of image paths to the PillowLoader.load
-# method to get your list of OpenCV images
+# method to get your list of Pillow images
 loader = PillowLoader()
 img_list = loader.load(path_list)
 
