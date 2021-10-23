@@ -1,4 +1,4 @@
-name: Run Quality Gate
+name: Run Unit Tests
 
 on:
   push:
