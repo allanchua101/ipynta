@@ -8,8 +8,7 @@ Before using this module, please make sure that you've installed its dependencie
 
 ```sh
 #!/bin/bash
-pip install numpy
-pip install opencv-python
+pip install numpy opencv-python
 ```
 
 ### How to load images from local drive

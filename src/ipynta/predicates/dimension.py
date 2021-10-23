@@ -7,45 +7,53 @@ class DimensionPred(BasePred):
 
   Attributes
   ----------
-  images : list[PIL.Image]
+    min_height (int): Minimum height of the images
+    min_width (int): Minimum width of the images
+    max_height (int): Maximum height of the images
+    max_width (int): Maximum width of the images
   """
-  def __init__(self, images=[]):
-    """Constructs all the necessary attributes for a predicate instance.
-
-    Args:
-      images (list[PIL.Image]): List of pillow images
-    """
-    BasePred.__init__(self, images)
-
-  def filter(self, min_height=-1, min_width=-1, max_height=-1, max_width=-1):
-    """Filters the images based on their dimensions.
+  def __init__(self, min_height=-1, min_width=-1, max_height=-1, max_width=-1):
+    """Constructor used for setting the constraints of the image predicate.
 
     Args:
       min_height (int): Minimum height of the images
       min_width (int): Minimum width of the images
       max_height (int): Maximum height of the images
       max_width (int): Maximum width of the images
+    """
+    BasePred.__init__(self)
+    self.min_height = min_height
+    self.min_width = min_width
+    self.max_height = max_height
+    self.max_width = max_width
+
+
+  def execute(self, images=[]):
+    """Runs the dimension predicate agains the provided list of images.
+
+    Args:
+      images (list[PIL.Image]): List of images to be evaluated against the predicate.
 
     Returns:
-      list[PIL.Image]: List of pillow images
+      list[PIL.Image]: List of images that satisfied the predicate.
     """
-    filtered_images = []
+    output = []
 
-    for image in self.images:
+    for image in images:
       width, height = image.size
 
-      if min_height > -1 and height < min_height:
+      if self.min_height > -1 and height < self.min_height:
         continue
 
-      if min_width > -1 and width < min_width:
+      if self.min_width > -1 and width < self.min_width:
         continue
 
-      if max_height > -1 and height > max_height:
+      if self.max_height > -1 and height > self.max_height:
         continue
 
-      if max_width > -1 and width > max_width:
+      if self.max_width > -1 and width > self.max_width:
         continue
 
-      filtered_images.append(image)
+      output.append(image)
 
-    return filtered_images
+    return output

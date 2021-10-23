@@ -1,20 +1,19 @@
 from ipynta.predicates import BasePred
 from os import path
-from PIL import Image
-import PIL
+import pytest
 
 SAMPLES_DIR = path.dirname(path.dirname(path.abspath(__file__))) + "/imgs"
 
-def test_base_pred_empty_init():
-  pred = BasePred([])
-  actual = len(pred.images)
-  expected = 0
 
-  assert(expected == actual)
+def test_base_pred_constructor():
+  try:
+    BasePred()
+  except Exception:
+    pytest.fail("BasePred constructor failed")
 
-def test_base_pred_pillow_list_init():
-  pred = BasePred([
-    Image.open(f"{SAMPLES_DIR}/1x1.png")
-  ])
+def test_base_pred_execute_empty():
+  pred = BasePred()
+  input = []
+  output = pred.execute(input)
 
-  assert(isinstance(pred.images[0],  PIL.PngImagePlugin.PngImageFile))
+  assert(len(output) == 0)

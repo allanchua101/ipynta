@@ -7,36 +7,42 @@ class GrayscalePred(BasePred):
 
   Attributes
   ----------
-  images : list[PIL.Image]
+  is_grayscale (boolean): Flag that indicates whether the predicate searches grayscale images or not.
   """
-  def __init__(self, images=[]):
-    """Constructs all the necessary attributes for a predicate instance.
+  def __init__(self, is_grayscale=True):
+    """Constructs an instance of GrayscalePred.
 
     Args:
-      images (list[PIL.Image]): List of pillow images
+      is_grayscale (boolean): Flag that indicates whether the predicate searches grayscale images or not.
     """
-    BasePred.__init__(self, images)
+    BasePred.__init__(self)
+    self.is_grayscale = is_grayscale
 
-  def filter(self, is_grayscale=True):
-    """Filters the images based on whether they are grayscale or not.
+  def execute(self, images=[]):
+    """Filters the provided images based on whether they are grayscale or not.
 
     Args:
-      is_grayscale (bool): Whether the images are grayscale or not.
+      images (list[PIL.Image]): List of images to be evaluated against the predicate.
 
     Returns:
-      list[PIL.Image]: List of images with grayscale configuration similar to the flag provided.
+      list[PIL.Image]: List of images that satisfied the predicate.
     """
     output = []
 
-    for img in self.images:
-      if self._is_grey_scale(img) == is_grayscale:
+    for img in images:
+      if self._check_if_grayscale(img) == self.is_grayscale:
         output.append(img)
 
     return output
 
-  def _is_grey_scale(self, img):
-    """Method used for checking if an image instance is grayscale or not.
-    
+  def _check_if_grayscale(self, img):
+    """Method used for checking if an image is grayscale or colored.
+
+    Args:
+      images (PIL.Image): Image to check.
+
+    Returns:
+      boolean: True if the image is grayscale, False otherwise.
     """
     tmp = img.convert('RGB')
     w, h = img.size

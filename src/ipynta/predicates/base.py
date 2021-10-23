@@ -3,17 +3,15 @@
 from PIL import Image
 
 class BasePred:
-  """Base class used to represent a ipynta predicates.
+  """Base class used to represent a ipynta predicates."""
 
-  Attributes
-  ----------
-  images : list[PIL.Image]
-    List of pillow images
-  """
-  def __init__(self, images=[]):
-    """Constructs all the necessary attributes for a predicate instance.
+  def execute(self, images=[]) -> list:
+    """Runs the predicate against the provided list of images.
 
     Args:
-      images (list[PIL.Image]): List of pillow images
+      images: list(Image) - List of images to run the predicate against.
+
+    Returns:
+      list(Image) - List of images that satisfy the predicate.
     """
-    self.images = images
+    return images
