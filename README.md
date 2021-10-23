@@ -1,3 +1,5 @@
+[![Unit Tests](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml/badge.svg)](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml)
+
 <p align="center">
     <img  src="https://i.imgur.com/mKCFKIf.jpeg"> 
 </p>
@@ -5,8 +7,6 @@
 <p align="center">
   <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
-
-[![Unit Tests](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml/badge.svg)](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml)
 
 ### High level overview
 
