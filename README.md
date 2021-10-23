@@ -6,6 +6,10 @@
   <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
 
+### Status
+
+![Unit Tests](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml/badge.svg)
+
 ### High level overview
 
 <p align="center">
