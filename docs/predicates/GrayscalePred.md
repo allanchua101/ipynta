@@ -11,19 +11,18 @@ from ipynta.sourcing import DirectorySniffer
 from ipynta.loaders import PillowLoader
 from ipynta.predicates import GrayscalePred
 
-# Use DirectorySniffer to load images from your local drive.
-sniffer = DirectorySniffer()
-path_list = sniffer.get_img_paths("./test/images")
+## Use DirectorySniffer to load images
+## from your local drive.
+path_list = DirectorySniffer().get_img_paths("./test/images")
+img_list = PillowLoader().load(path_list)
 
-# Pass the list of image paths to the PillowLoader.load
-# method to get your list of Pillow images
-loader = PillowLoader()
-img_list = loader.load(path_list)
+## Find gray images by passing True
+## flag to the filter method
+gs_pred = GrayscalePred(is_grayscale=True)
+grayscale_imgs = gs_pred.execute(img_list)
 
-## Find gray images by passing True flag to the filter method
-predicate = GrayscalePred(img_list)
-grayscale_images = predicate.filter(is_grayscale=True)
-
-## Find colored images by passing False flag to the filter method
-colored_images = predicate.filter(is_grayscale=False)
+## Find colored images by passing False
+## flag to the filter method
+colored_pred = GrayscalePred(is_grayscale=False)
+colored_imgs = colored_pred.execute(img_list)
 ```
