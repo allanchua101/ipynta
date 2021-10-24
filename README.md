@@ -1,6 +1,7 @@
 [![Unit Tests](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml/badge.svg)](https://github.com/allanchua101/ipynta/actions/workflows/run_unit_tests.yml)
 [![PyPI version](https://badge.fury.io/py/ipynta.svg)](https://badge.fury.io/py/ipynta)
 [![PyPI download month](https://img.shields.io/pypi/dm/ipynta.svg)](https://pypi.python.org/pypi/ipynta/)
+[![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/allanchua101/ipynta/graphs/commit-activity)
 
 
 <p align="center">
