@@ -1,6 +1,6 @@
 # PillowLoader
 
-`PillowLoader` class used for loading Pillow images.
+`PillowLoader` class is used for loading Pillow images.
 
 ## How to load images from local drive
 

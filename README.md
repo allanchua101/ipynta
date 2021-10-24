@@ -9,7 +9,13 @@
   <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
 
-### High level overview
+## Installation
+
+```sh
+pip install ipynta
+```
+
+## High level overview
 
 <p align="center">
   <img src="https://i.imgur.com/tCDKqJD.png" />
@@ -18,6 +24,12 @@
 <p align="center">
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
+
+### Extractor Classes
+
+Extractor classes are used for **extracting** the contents of a compressed files like zip, tar, rar and etc.
+
+- [ZipExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/ZipExtractor.md)
 
 ### Sourcing Classes
 
