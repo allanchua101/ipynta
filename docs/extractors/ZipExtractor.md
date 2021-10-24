@@ -6,7 +6,7 @@
 
 Data scientists would usually compress their image datasets inside a zip file to achieve the following:
 
-- Reduce number of HTTP transactions required to upload datasets to remote storages
+- Reduce number of HTTP transactions required to upload/download datasets to/from remote storages
 - Reduce image dataset's size on disk
 
 ### Example Usage
