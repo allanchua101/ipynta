@@ -1,6 +1,6 @@
 # OpenCVLoader
 
-`OpenCVLoader` class used for loading OpenCV images.
+`OpenCVLoader` class is used for loading OpenCV images.
 
 ## Pre-requisites
 

@@ -1,6 +1,6 @@
 # DimensionPred
 
-`DimensionPred` class is used for writing dimension-based predicates.
+`DimensionPred` is used for writing dimension-based predicates.
 
 ## Use-case
 
