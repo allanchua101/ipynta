@@ -3,7 +3,6 @@
 [![PyPI download month](https://img.shields.io/pypi/dm/ipynta.svg)](https://pypi.python.org/pypi/ipynta/)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/allanchua101/ipynta/graphs/commit-activity)
 
-
 <p align="center">
     <img  src="https://i.imgur.com/mKCFKIf.jpeg"> 
 </p>
@@ -33,6 +32,7 @@ pip install ipynta
 Extractor classes are used for **extracting** the contents of a compressed files like zip, tar, rar and etc.
 
 - [ZipExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/ZipExtractor.md)
+- [TarExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/TarExtractor.md)
 
 ### Sourcing Classes
 
