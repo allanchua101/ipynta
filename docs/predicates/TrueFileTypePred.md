@@ -1,6 +1,6 @@
 # TrueFileTypePred
 
-`TrueFileTypePred` is used for writing predicates for searching files with file extensions that match / don't match their true file types.
+`TrueFileTypePred` is used for writing predicates used for searching images with file extensions that match / don't match their [true file types](https://www.opswat.com/products/metadefender/file-type-verification).
 
 ### Use-case
 
