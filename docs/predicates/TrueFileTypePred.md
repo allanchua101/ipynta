@@ -6,8 +6,8 @@
 
 Being able to filter images that present inaccurate file extensions is a powerful capability that can prevent:
 
-- Unhandled exceptions caused by transform processes that expect a certain file format.
-- Attacks rooting form malicious files.
+- Unhandled exceptions caused by image transformation processes that expect a certain file format.
+- Attacks rooting from malicious files.
 
 ### Finding files with file extensions that don't match with their true file types.
 
