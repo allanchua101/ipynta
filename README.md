@@ -34,26 +34,27 @@ Extractor classes are used for **extracting** the contents of a compressed files
 - [ZipExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/ZipExtractor.md)
 - [TarExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/TarExtractor.md)
 
-### Sourcing Classes
+#### Sourcing Classes
 
 Sourcing classes are used for retrieving image dataset metadata from different sources (local drive, zip files, etc.):
 
 - [DirectorySniffer](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/DirectorySniffer.md)
 
-### Loader Classes
+#### Loader Classes
 
 Loader classes are used for instantiating / constructing / loading images from different sources.
 
 - [OpenCVLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/OpenCVLoader.md)
 - [PillowLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/PillowLoader.md)
 
-### Predicate Classes
+#### Predicate Classes
 
 Predicate classes are used for filtering unwanted data from image datasets.
 
 - [DimensionPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/DimensionPred.md)
 - [GrayscalePred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/GrayscalePred.md)
 - [FileExtPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/FileExtPred.md)
+- [TrueFileTypePred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/TrueFileTypePred.md)
 
 ### Why was it named ipynta?
 
