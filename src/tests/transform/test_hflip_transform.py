@@ -1,3 +1,5 @@
+from ipynta.sourcing import DirectorySniffer
+from ipynta.loaders import PillowLoader
 from ipynta.transform import HFlipTransform
 from os import path
 from PIL import Image

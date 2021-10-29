@@ -15,8 +15,10 @@ class DirectorySniffer:
         -------
             list[str]: List of image paths found from the target directory.
         """
-        jpeg_list = [f for f in glob.glob(f'{dir_path}/*.jpeg')]
-        jpgs_list = [f for f in glob.glob(f'{dir_path}/*.jpg')]
-        pngs_list = [f for f in glob.glob(f'{dir_path}/*.png')]
+        exts = ['jpeg', 'jpg', 'png']
+        img_list = []
         
-        return jpeg_list + jpgs_list + pngs_list
+        for ext in exts:
+            img_list.extend(glob.iglob(f'{dir_path}/**/*.{ext}', recursive=True))
+
+        return img_list
