@@ -5,7 +5,7 @@ on:
   # events but only for the main branch
   push:
     branches: [main]
-    branches-ignore:
+    paths-ignore:
       - 'docs/*'
 
   # Allows you to run this workflow manually from the Actions tab
