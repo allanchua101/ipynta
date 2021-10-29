@@ -60,7 +60,7 @@ Predicate classes are used for filtering unwanted data from image datasets.
 
 Transform classes are used for applying transformations to image datasets
 
-- [HFlipTransformer](https://github.com/allanchua101/ipynta/blob/main/docs/transformer/HFlipTransformer.md)
+- [HFlipTransformer](https://github.com/allanchua101/ipynta/blob/main/docs/transform/HFlipTransformer.md)
 
 ### Why was it named ipynta?
 
