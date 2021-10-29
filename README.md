@@ -27,7 +27,7 @@ pip install ipynta
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
 
-### Extractor Classes
+#### Extractor Classes
 
 Extractor classes are used for **extracting** the contents of a compressed files like zip, tar, rar and etc.
 
