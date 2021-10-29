@@ -21,5 +21,5 @@ img_list = PillowLoader().load(path_list)
 
 ## GrayscaleTransform class was used to create
 ## grayscale copies of the provided images
-grayscale_img_list = HFlipTransform().execute(img_list)
+grayscale_img_list = GrayscaleTransform().execute(img_list)
 ```
