@@ -11,22 +11,22 @@ class HFlipTransform(BaseTransform):
     """Constructs an instance of HFlipTransform."""
     BaseTransform.__init__(self)
 
-  def execute(self, images):
+  def execute(self, img_list):
     """Method used for creating horizontally flipped versions of provided images.
 
     Args:
-      images list[PIL.Image]: A list of Pillow images to be used as seed image set.
+      img_list list[PIL.Image]: A list of Pillow images to be used as seed image set.
 
     Returns:
       list[PIL.Image]: List of transformed images.
     """
-    if (images is None):
+    if (img_list is None):
       return []
 
     output = []
 
-    for image in images:
-      tmp = image.copy()
+    for img in img_list:
+      tmp = img.copy()
       tmp = np.array(tmp)
       tmp = np.fliplr(tmp)
       output.append(Image.fromarray(tmp))
