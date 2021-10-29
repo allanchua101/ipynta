@@ -15,7 +15,7 @@ else:
       long_description = "We're fixing our docs!"
 
 setup(name='ipynta',
-      version='0.0.30',
+      version='0.0.31',
       long_description=long_description,
       long_description_content_type='text/markdown',
       description="A Python library for different image processing tasks.",
