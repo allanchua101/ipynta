@@ -5,7 +5,7 @@ from os import path
 from PIL import Image
 import pytest
 
-SAMPLES_DIR = path.dirname(path.dirname(path.abspath(__file__))) + "/imgs"
+SAMPLES_DIR = path.dirname(path.abspath(__file__)) + "/sample_images/hflip"
 
 def test_hflip_transform_init():
   try:
@@ -40,7 +40,7 @@ def test_hflip_transform_dimension_integrity(src_path):
 
   assert(flipped_img.width == img.width and flipped_img.height == img.height)
 
-def check_if_pixels_are_flipped(img1, img2):
+def were_pixels_flipped(img1, img2):
   w = img1.size[0]
   h = img1.size[1]
 
@@ -62,11 +62,23 @@ def check_if_pixels_are_flipped(img1, img2):
   (f"{SAMPLES_DIR}/1x1.png"),
   (f"{SAMPLES_DIR}/5x5.jpg"),
   (f"{SAMPLES_DIR}/5x5.png"),
+  (f"{SAMPLES_DIR}/shapes.jpg"),
 ])
 def test_hflip_transform_pixel_movement(src_path):
   img = Image.open(src_path)
   output = HFlipTransform().execute([img])
   flipped_img = output[0]
-  result = check_if_pixels_are_flipped(img, flipped_img)
+  result = were_pixels_flipped(img, flipped_img)
 
   assert(result == True)
+
+def test_hflip_transform_batch_transform():
+  img_paths = DirectorySniffer().get_img_paths(SAMPLES_DIR)
+  img_list = PillowLoader().load(img_paths)
+  flipped_img_list = HFlipTransform().execute(img_list)
+
+  for idx, flipped_img in enumerate(flipped_img_list):
+    is_flipped = were_pixels_flipped(img_list[idx], flipped_img)
+
+    if not is_flipped:
+      pytest.fail("An image failed to flip horizontally")
