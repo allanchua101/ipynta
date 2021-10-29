@@ -3,16 +3,16 @@
 class BaseTransform:
   """Base class used to represent a ipynta transformers."""
 
-  def execute(self, images=[]) -> list:
+  def execute(self, img_list=[]) -> list:
     """Runs the transformer against an image list.
 
     Args:
-      images: list(Image) - List of images to run the transformer instance against.
+      img_list: list(Image) - List of images to run the transformer instance against.
 
     Returns:
       list(Image) - List of transformed images.
     """
-    if images is None:
+    if img_list is None:
       return []
       
-    return images
+    return img_list

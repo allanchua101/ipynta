@@ -5,7 +5,7 @@ from os import path
 from PIL import Image
 import pytest
 
-SAMPLES_DIR = path.dirname(path.abspath(__file__)) + "/sample_images/hflip"
+SAMPLES_DIR = path.dirname(path.abspath(__file__)) + "/sample_images/flip"
 
 def test_hflip_transform_init():
   try:
