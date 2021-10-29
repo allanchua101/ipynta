@@ -2,7 +2,7 @@
 
 `VFlipTransform` is used for generating vertically flipped counterparts of provided image datasets.
 
-### Performing a batch vertically flip operation.
+### Running a vertical flip operation on a list of images.
 
 The sample below:
 
