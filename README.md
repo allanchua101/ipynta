@@ -56,6 +56,12 @@ Predicate classes are used for filtering unwanted data from image datasets.
 - [FileExtPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/FileExtPred.md)
 - [TrueFileTypePred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/TrueFileTypePred.md)
 
+#### Transform Classes
+
+Transform classes are used for applying transformations to image datasets
+
+- [HFlipTransformer](https://github.com/allanchua101/ipynta/blob/main/docs/transformer/HFlipTransformer.md)
+
 ### Why was it named ipynta?
 
 `I-pinta` means _"to paint"_ in tagalog! This library is proudly developed by a Singapore-based Filipino lad with nothing better to do during evenings.
