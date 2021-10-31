@@ -40,16 +40,16 @@ from ipynta.sourcing import DownloadKeyPair
 from ipynta.sourcing import HttpDownloader
 from ipynta.extractors import TarExtractor
 
-TAR_FILE = "./raw/pets.tar.gz"
-DATA_PATH = "/train/pets"
+TAR_PATH = "./raw/pets.tar.gz"
+DATA_PATH = "/train"
 
 download_list = [
-  DownloadKeyPair("https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz", TAR_FILE)
+  DownloadKeyPair("https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz", TAR_PATH)
 ]
 
 downloader = HttpDownloader(download_list)
 downloader.execute()
 
-extractor = TarExtractor(TAR_FILE, DATA_PATH)
+extractor = TarExtractor(TAR_PATH, DATA_PATH)
 extractor.execute()
 ```
