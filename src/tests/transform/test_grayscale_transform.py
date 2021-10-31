@@ -2,7 +2,6 @@ from ipynta.sourcing import DirectorySniffer
 from ipynta.loaders import PillowLoader
 from ipynta.transform import GrayscaleTransform
 from os import path
-from PIL import Image
 import pytest
 
 SAMPLES_DIR = path.dirname(path.abspath(__file__)) + "/sample_images/grayscale"
