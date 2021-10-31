@@ -14,9 +14,12 @@ The sample below:
 from ipynta.sourcing import DownloadKeyPair
 from ipynta.sourcing import HttpDownloader
 
+ICON_PATH_URL = "https://logos-download.com/wp-content/uploads/2016/10/"
+OUT_PATH = "./imgs/icons/python/"
+
 download_list = [
-  DownloadKeyPair("https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png", "./imgs/icons/python/icon.png"),
-  DownloadKeyPair("https://logos-download.com/wp-content/uploads/2016/10/Python_logo_wordmark.png", "./imgs/icons/python/banner.png"),
+  DownloadKeyPair(f"{ICON_PATH_URL}Python_logo_icon.png", f"{OUT_PATH}icon.png"),
+  DownloadKeyPair(f"{ICON_PATH_URL}Python_logo_wordmark.png", f"{OUT_PATH}banner.png"),
 ]
 
 downloader = HttpDownloader(download_list)
