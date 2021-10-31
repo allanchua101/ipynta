@@ -5,3 +5,4 @@ pytest
 pillow
 opencv-python
 numpy
+mock
