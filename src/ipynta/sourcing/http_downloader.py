@@ -24,7 +24,9 @@ class HttpDownloader:
       if (not item.is_valid()):
         continue
 
-      if not os.path.exists(item.local_path):
-        os.makedirs(item.local_path)
+      dir_name = os.path.dirname(item.local_path)
+
+      if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
 
       rq.urlretrieve(item.download_url, item.local_path)
