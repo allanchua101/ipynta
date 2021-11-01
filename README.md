@@ -27,43 +27,13 @@ pip install ipynta
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
 
-#### Extractor Classes
+## Class Families
 
-Extractor classes are used for **extracting** the contents of a compressed files like zip, tar, rar and etc.
-
-- [ZipExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/ZipExtractor.md)
-- [TarExtractor](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/TarExtractor.md)
-
-#### Sourcing Classes
-
-Sourcing classes are used for retrieving image dataset metadata from different sources (local drive, zip files, etc.):
-
-- [DirectorySniffer](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/DirectorySniffer.md)
-- [HttpDownloader](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/HttpDownloader.md)
-
-#### Loader Classes
-
-Loader classes are used for instantiating / constructing / loading images from different sources.
-
-- [OpenCVLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/OpenCVLoader.md)
-- [PillowLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/PillowLoader.md)
-
-#### Predicate Classes
-
-Predicate classes are used for filtering unwanted data from image datasets.
-
-- [DimensionPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/DimensionPred.md)
-- [GrayscalePred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/GrayscalePred.md)
-- [FileExtPred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/FileExtPred.md)
-- [TrueFileTypePred](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/TrueFileTypePred.md)
-
-#### Transform Classes
-
-Transform classes are used for applying transformations to image datasets
-
-- [HFlipTransform](https://github.com/allanchua101/ipynta/blob/main/docs/transform/HFlipTransform.md)
-- [VFlipTransform](https://github.com/allanchua101/ipynta/blob/main/docs/transform/VFlipTransform.md)
-- [GrayscaleTransform](https://github.com/allanchua101/ipynta/blob/main/docs/transform/GrayscaleTransform.md)
+- [Extractors](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/Extractors.md)
+- [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Sourcing.md)
+- [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Loaders.md)
+- [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Predicates.md)
+- [Transforms](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Transformers.md)
 
 ### Why was it named ipynta?
 
