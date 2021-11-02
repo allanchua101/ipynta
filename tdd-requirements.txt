@@ -6,3 +6,4 @@ pillow
 opencv-python
 numpy
 mock
+boto3

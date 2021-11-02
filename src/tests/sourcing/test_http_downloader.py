@@ -15,6 +15,9 @@ MOCK_FQDN = "http://localhost:8585"
 def _mock_download(src, dst):
   local_src = src.replace(MOCK_FQDN, SAMPLES_DIR)
 
+  if not path.exists(local_src):
+    return
+
   with open(local_src, "rb") as f:
     with open(dst, "wb") as g:
       g.write(f.read())
