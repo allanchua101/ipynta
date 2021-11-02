@@ -4,37 +4,37 @@
 [![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/allanchua101/ipynta/graphs/commit-activity)
 
 <p align="center">
-    <img  src="https://i.imgur.com/mKCFKIf.jpeg"> 
+    <img  src="https://i.imgur.com/W1lha0W.jpeg"> 
 </p>
 
 <p align="center">
   <strong>ipynta</strong> is a Python library designed for rapid development of image pre-processing pipelines.
 </p>
 
-## Installation
+#### Installation
 
 ```sh
 pip install ipynta
 ```
 
-## High level overview
+#### High level overview
 
 <p align="center">
-  <img src="https://i.imgur.com/tCDKqJD.png" />
+  <img src="https://i.imgur.com/xAewjot.png" />
 </p>
 
 <p align="center">
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
 
-## Class Families
+#### Class Families
 
-- [Extractors](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/Extractors.md)
-- [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Sourcing.md)
-- [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Loaders.md)
-- [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Predicates.md)
-- [Transformers](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Transformers.md)
+- [Extractors](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/Readme.md)
+- [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Readme.md)
+- [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Readme.md)
+- [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Readme.md)
+- [Transformers](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Readme.md)
 
-### Why was it named ipynta?
+#### Why was it named ipynta?
 
 `I-pinta` means _"to paint"_ in tagalog! This library is proudly developed by a Singapore-based Filipino lad with nothing better to do during evenings.
