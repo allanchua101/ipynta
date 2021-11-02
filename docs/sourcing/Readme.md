@@ -4,3 +4,4 @@ Sourcing classes are used for retrieving image dataset metadata from different s
 
 - [DirectorySniffer](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/DirectorySniffer.md)
 - [HttpDownloader](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/HttpDownloader.md)
+- [S3Downloader](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/S3Downloader.md)
