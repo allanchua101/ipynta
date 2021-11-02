@@ -33,7 +33,7 @@ pip install ipynta
 - [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Sourcing.md)
 - [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Loaders.md)
 - [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Predicates.md)
-- [Transforms](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Transformers.md)
+- [Transformers](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Transformers.md)
 
 ### Why was it named ipynta?
 
