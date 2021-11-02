@@ -34,6 +34,7 @@ s3_object_key="train/cats.tar.gz"
 local_tar_path = "./tmp/cats.tar.gz"
 
 s3_downloader = S3Downloader(aws_profile, s3_bucket_name, s3_object_key, local_tar_path)
+s3_downloader.execute()
 
 local_train_dir = "./train"
 
