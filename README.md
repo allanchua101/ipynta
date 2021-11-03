@@ -27,13 +27,16 @@ pip install ipynta
   The diagram above describes the purpose of each iPynta class family and how can they be used collectively in an image pre-processing pipeline.
 </p>
 
-#### Class Families
+#### Core Class Families
 
-- [Extractors](https://github.com/allanchua101/ipynta/blob/main/docs/extractors/Readme.md)
 - [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Readme.md)
-- [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Readme.md)
 - [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Readme.md)
 - [Transformers](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Readme.md)
+
+#### Utility Class Families
+
+- [Loaders](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/Readme.md)
+- [Packaging](https://github.com/allanchua101/ipynta/blob/main/docs/packaging/Readme.md)
 
 #### Why was it named ipynta?
 

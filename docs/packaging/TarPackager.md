@@ -1,6 +1,6 @@
-# TarExtractor
+# TarPackager
 
-`TarExtractor` is used for extracting the contents of `TAR` files.
+`TarPackager` is used for extracting the contents of `TAR` files.
 
 ## Use-case
 
@@ -12,15 +12,14 @@ Data scientists would usually compress their image datasets inside a `TAR` file 
 ### Example Usage
 
 ```py
-import ipynta.extractors import TarExtractor
+import ipynta.packaging import TarPackager
 
 tar_path = "./foo.tar"
 dest_path = "./foo"
 
-# Construct class and execute
-extractor = TarExtractor(tar_path, dest_path)
+packager = TarPackager(tar_path, dest_path)
 
-# execute method returns the list of file paths
-# extracted out of the TAR file.
-files = extractor.execute()
+# unpack method returns the list of file
+# paths extracted out of the TAR file.
+files = packager.unpack()
 ```

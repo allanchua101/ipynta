@@ -2,7 +2,7 @@ from zipfile import ZipFile
 
 # Author: Allan Chua allanchua.officefiles@gmail.com
 
-class ZipExtractor:
+class ZipPackager:
   """Class used for extracting zip file contents
   
   Attributes:
@@ -13,8 +13,8 @@ class ZipExtractor:
     self.zip_path = zip_path
     self.dest_path = dest_path
 
-  def execute(self):
-    """Executes the extraction of zip file contents
+  def unpack(self):
+    """Method used for unpacking the zip file contents.
     
     Returns:
       list[str]: List of extracted file paths.
