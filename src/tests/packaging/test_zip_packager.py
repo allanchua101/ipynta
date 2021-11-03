@@ -1,4 +1,4 @@
-from ipynta.extractors import ZipExtractor
+from ipynta.packaging import ZipPackager
 from os import path
 import pytest
 import shutil
@@ -15,23 +15,23 @@ def clear_dst_folder():
     shutil.rmtree(DST_FOLDER)
 
 @pytest.fixture()
-def extractor():
-  extractor = ZipExtractor(SAMPLE_ZIP, DST_FOLDER)
-  return extractor
+def packager():
+  packager = ZipPackager(SAMPLE_ZIP, DST_FOLDER)
+  return packager
 
-def test_zip_extractor_init():
+def test_zip_packager_init():
   try:
-    ZipExtractor(SAMPLE_ZIP, DST_FOLDER)
+    ZipPackager(SAMPLE_ZIP, DST_FOLDER)
   except Exception:
-    pytest.fail("ZipExtractor construction failed")
+    pytest.fail("ZipPackager construction failed")
 
-def test_zip_extractor_unzip_count(extractor):
-  files = extractor.execute()
+def test_zip_packager_unzip_count(packager):
+  files = packager.unpack()
 
   assert(len(files) == 6)
 
-def test_zip_extractor_file_existence(extractor):
-  files = extractor.execute()
+def test_zip_packager_file_existence(packager):
+  files = packager.unpack()
 
   assert(all([path.exists(f"{DST_FOLDER}/{file}") for file in files]))
 

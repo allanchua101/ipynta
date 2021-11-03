@@ -33,12 +33,12 @@ The sample below:
 - Utilizes `DownloadKeyPair` class to describe an open-source dataset download from an HTTP source.
 - It then constructs an `HttpDownloader` class by providing the a download list.
 - It then triggers the download operations using the `execute` method.
-- You can utilize `TarExtractor` class to extract the images to a local directory.
+- You can utilize `TarPackager` class to extract the images to a local directory.
 
 ```py
 from ipynta.sourcing import DownloadKeyPair
 from ipynta.sourcing import HttpDownloader
-from ipynta.extractors import TarExtractor
+from ipynta.packaging import TarPackager
 
 TAR_PATH = "./raw/pets.tar.gz"
 DATA_PATH = "/train"
@@ -50,6 +50,6 @@ download_list = [
 downloader = HttpDownloader(download_list)
 downloader.execute()
 
-extractor = TarExtractor(TAR_PATH, DATA_PATH)
-extractor.execute()
+packager = TarPackager(TAR_PATH, DATA_PATH)
+packager.unpack()
 ```

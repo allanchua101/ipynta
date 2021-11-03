@@ -1,4 +1,4 @@
-from ipynta.extractors import TarExtractor
+from ipynta.packaging import TarPackager
 from os import path
 import pytest
 import shutil
@@ -15,23 +15,23 @@ def clear_dst_folder():
     shutil.rmtree(DST_FOLDER)
 
 @pytest.fixture()
-def extractor():
-  extractor = TarExtractor(SAMPLE_TAR, DST_FOLDER)
-  return extractor
+def packager():
+  packager = TarPackager(SAMPLE_TAR, DST_FOLDER)
+  return packager
 
-def test_tar_extractor_init():
+def test_tar_packager_init():
   try:
-    TarExtractor(SAMPLE_TAR, DST_FOLDER)
+    TarPackager(SAMPLE_TAR, DST_FOLDER)
   except Exception:
-    pytest.fail("TarExtractor construction failed")
+    pytest.fail("TarPackager construction failed")
 
-def test_tar_extractor_untar_count(extractor):
-  files = extractor.execute()
+def test_tar_packager_untar_count(packager):
+  files = packager.unpack()
   
   assert(len(files) == 6)
 
-def test_tar_extractor_file_existence(extractor):
-  files = extractor.execute()
+def test_tar_packager_file_existence(packager):
+  files = packager.unpack()
 
   assert(all([path.exists(f"{file}") for file in files]))
 

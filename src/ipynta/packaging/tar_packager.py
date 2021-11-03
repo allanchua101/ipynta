@@ -3,7 +3,7 @@ import glob
 
 # Author: Allan Chua allanchua.officefiles@gmail.com
 
-class TarExtractor:
+class TarPackager:
   """Class used for extracting TAR file contents
   
   Attributes:
@@ -14,11 +14,11 @@ class TarExtractor:
     self.tar_path = tar_path
     self.dest_path = dest_path
 
-  def execute(self):
-    """Executes the extraction of TAR file contents
+  def unpack(self):
+    """Method used for unpacking of TAR file contents
     
     Returns:
-      list[str]: List of extracted file paths.
+      list[str]: List of unpacked file paths.
     """
     with tarfile.open(self.tar_path) as tf:
       tf.extractall(self.dest_path)
