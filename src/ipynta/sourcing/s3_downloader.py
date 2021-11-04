@@ -1,6 +1,7 @@
 # Author: Allan Chua allanchua.officefiles@gmail.com
 
 import boto3
+from ipynta.validators import StringValidator
 
 class S3Downloader:
   """Class used for downloading files from S3 buckets
@@ -46,14 +47,6 @@ class S3Downloader:
     self.object_key = object_key
     self.local_file_path = local_file_path
 
-  def _is_empty_str(self, str):
-    if str is None:
-      return True
-
-    cleansed_str = str.strip()
-
-    return len(cleansed_str) <= 0
-
   def _build_client(self):
     return boto3.session.Session(profile_name=self.aws_profile).client('s3')
 
@@ -69,16 +62,18 @@ class S3Downloader:
       - No local download path specified.
       - No AWS profile name specified.
     """
-    if self._is_empty_str(self.bucket_name):
+    validator = StringValidator()
+
+    if validator.is_empty(self.bucket_name):
       raise Exception("No S3 bucket name specified.")
 
-    if self._is_empty_str(self.object_key):
+    if validator.is_empty(self.object_key):
       raise Exception("No S3 object key specified.")
 
-    if self._is_empty_str(self.local_file_path):
+    if validator.is_empty(self.local_file_path):
       raise Exception("No local download path specified.")
 
-    if self._is_empty_str(self.aws_profile):
+    if validator.is_empty(self.aws_profile):
       raise Exception("No AWS profile name specified.")
 
     s3_client = self._build_client()
