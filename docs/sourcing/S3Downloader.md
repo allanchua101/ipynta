@@ -22,7 +22,6 @@ The sample below:
   - `local_file_path`: The local path where the `tar` file will get stored.
 
 - Triggers the download process from s3 using the `execute` method.
-- Utilizes the `TarPackager` class to extract the images compressed inside the tar file to a local directory (`./train`).
 
 ```py
 from ipynta.sourcing import S3Downloader
@@ -35,9 +34,4 @@ local_tar_path = "./tmp/cats.tar.gz"
 
 s3_downloader = S3Downloader(aws_profile, s3_bucket_name, s3_object_key, local_tar_path)
 s3_downloader.execute()
-
-local_train_dir = "./train"
-
-packager = TarPackager(local_tar_path, local_train_dir)
-packager.unpack()
 ```
