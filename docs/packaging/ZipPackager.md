@@ -9,7 +9,7 @@ Data scientists would usually compress their image datasets inside a zip file to
 - Reduce number of HTTP transactions required to upload/download datasets to/from remote storages
 - Reduce image dataset's size on disk
 
-### Example Usage
+### Unpacking zip files.
 
 ```py
 import ipynta.packaging import ZipPackager
