@@ -25,7 +25,6 @@ The sample below:
 
 ```py
 from ipynta.sourcing import S3Downloader
-from ipynta.packaging import TarPackager
 
 aws_profile="cats_corp"
 s3_bucket_name="cats-ai-s3"
