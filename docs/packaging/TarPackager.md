@@ -9,7 +9,7 @@ Data scientists would usually compress their image datasets inside a `TAR` file 
 - Reduce number of HTTP transactions required to upload/download datasets to/from remote storages
 - Reduce image dataset's size on disk
 
-### Example Usage
+### Unpacking Tar Files
 
 ```py
 import ipynta.packaging import TarPackager
