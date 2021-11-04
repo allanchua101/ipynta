@@ -32,6 +32,7 @@ pip install ipynta
 - [Sourcing](https://github.com/allanchua101/ipynta/blob/main/docs/sourcing/Readme.md)
 - [Predicates](https://github.com/allanchua101/ipynta/blob/main/docs/predicates/Readme.md)
 - [Transformers](https://github.com/allanchua101/ipynta/blob/main/docs/transform/Readme.md)
+- [Persistence](https://github.com/allanchua101/ipynta/blob/main/docs/persistence/Readme.md)
 
 #### Utility Class Families
 

@@ -34,7 +34,7 @@ def test_s3_downloader_constructor(profile, bucket_name, obj_key, dst_path):
     # we should have a peaceful construction.
     S3Downloader(profile, bucket_name, obj_key, dst_path)
   except Exception:
-    pytest.fail("HttpDownloader construction failed")
+    pytest.fail("S3Downloader construction failed")
 
 # Test happy path
 @pytest.mark.parametrize("profile, bucket_name, obj_key, dst_path", [
