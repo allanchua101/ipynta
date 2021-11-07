@@ -4,3 +4,6 @@ Loader classes are used for instantiating / constructing / loading images using 
 
 - [OpenCVLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/OpenCVLoader.md)
 - [PillowLoader](https://github.com/allanchua101/ipynta/blob/main/docs/loaders/PillowLoader.md)
+
+---
+[Go back to project root](https://github.com/allanchua101/ipynta)
