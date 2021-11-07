@@ -16,3 +16,6 @@ I will add classes for pulling files from the following origins:
 - GCP Cloud Storage
 - Azure Blob Containers
 - Various Open Image Sources (Unsplash, Google, IMGUR)
+
+---
+[Go back to project root](https://github.com/allanchua101/ipynta)
